@@ -29,25 +29,25 @@ License <a href="https://en.wikipedia.org/wiki/GNU_General_Public_License#Versio
 
 All the ARMv7 assembly source files can be found in the files called **src**.
 
- * **1\_fieldmult.s**: different field multiplications.
- * **2\_secmult\_cprr.s**: CPRR evaluation.
- * **2\_secmult\_isw.s**: ISW multiplication.
- * **2\_secmult\_iswand.s**: ISW-AND multiplication. 
- * **2\_secmult\_refresh.s**: ISW-based refresh.
- * **3\_secsbox\_bsaes.s**: bitslice AES s-box.
- * **3\_secsbox\_bspresent.s**: bitslice PRESENT s-box.
- * **3\_secsbox\_fog.s**: FoG PRESENT s-box.
- * **3\_secsbox\_khl.s**: KHL AES s-box.
- * **3\_secsbox\_rp.s**: RP AES s-box.
- * **4\_seccipher\_bsaes.s**: bitslice AES encryption.
- * **4\_seccipher\_bspresent.s**: bitslice PRESENT encryption.
- * **4\_seccipher\_regaes.s**: regular AES encryption.
- * **4\_seccipher\_regpresent.s**: regular PRESENT encryption.
- * **random.s**: random generation.
+ * **1\_fieldmult.S**: different field multiplications.
+ * **2\_secmult\_cprr.S**: CPRR evaluation.
+ * **2\_secmult\_isw.S**: ISW multiplication.
+ * **2\_secmult\_iswand.S**: ISW-AND multiplication. 
+ * **2\_secmult\_refresh.S**: ISW-based refresh.
+ * **3\_secsbox\_bsaes.S**: bitslice AES s-box.
+ * **3\_secsbox\_bspresent.S**: bitslice PRESENT s-box.
+ * **3\_secsbox\_fog.S**: FoG PRESENT s-box.
+ * **3\_secsbox\_khl.S**: KHL AES s-box.
+ * **3\_secsbox\_rp.S**: RP AES s-box.
+ * **4\_seccipher\_bsaes.S**: bitslice AES encryption.
+ * **4\_seccipher\_bspresent.S**: bitslice PRESENT encryption.
+ * **4\_seccipher\_regaes.S**: regular AES encryption.
+ * **4\_seccipher\_regpresent.S**: regular PRESENT encryption.
+ * **random.S**: random generation.
 
 ### Header file:
 
- * **parameter.h**: Header files containing different sets of parameters.
+ * **param.h**: Header files containing different sets of parameters.
  * **mode.h**: Header files containing different modes for specific functions.
 
 ### Main:

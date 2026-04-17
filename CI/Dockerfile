@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     gcc-arm-linux-gnueabi \
     python3 \
     qemu-system-arm \
+    qemu-user \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /workspace

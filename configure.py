@@ -891,7 +891,7 @@ CC_LOCAL = "gcc"
 EXTRA_CFLAGS_LOCAL = ""
 EXTRA_LDFLAGS_LOCAL = ""
 EXTRA_OBJ_LOCAL = f"$(patsubst %.S, %.o, test/{test_str})"
-PLATFORM_TEST_STRING_LOCAL = "./hom_ec17"
+PLATFORM_TEST_STRING_LOCAL = "qemu-arm -L /usr/arm-linux-gnueabi ./hom_ec17"
 # Embedded Cortex-M4
 CC_CM4 = "arm-none-eabi-gcc"
 EXTRA_CFLAGS_CM4 = "-mcpu=cortex-m4 -mthumb"

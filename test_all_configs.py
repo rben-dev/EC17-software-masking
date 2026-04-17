@@ -301,12 +301,19 @@ def status_str(r: Result) -> str:
     stage = "configure" if not r.configure_ok else ("build" if not r.build_ok else "test")
     return f"{RED}FAIL({stage}){RESET}  [{' -> '.join(r.config.inputs)}]"
 
+
 def print_result(r: Result):
     t = f"  ({r.elapsed:.1f}s)" if r.elapsed else ""
     print(f"[{status_str(r)}] {r.config.label}{t}")
     if not r.test_ok:
         print(f"        error : {r.error_msg}")
         print(f"        log   : {r.log_path}")
+        if r.log_path and os.path.exists(r.log_path):
+            print("        ── log dump ──────────────────────────")
+            with open(r.log_path) as f:
+                for line in f:
+                    print(f"        {line}", end="")
+            print("        ──────────────────────────────────────")
 
 
 def print_summary(results: List[Result]):
